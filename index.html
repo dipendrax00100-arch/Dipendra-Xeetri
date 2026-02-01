@@ -1,0 +1,956 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dipendra Xettri | Elite Digital Solutions</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Graph Background -->
+    <canvas id="graph-canvas"></canvas>
+
+    <!-- Mouse Magic Effect -->
+    <div class="mouse-magic"></div>
+    <div class="mouse-trail"></div>
+
+    <!-- Floating Elements -->
+    <div class="floating-element fe1"><i class="fas fa-code"></i></div>
+    <div class="floating-element fe2"><i class="fas fa-shield-alt"></i></div>
+    <div class="floating-element fe3"><i class="fas fa-bolt"></i></div>
+    <div class="floating-element fe4"><i class="fas fa-robot"></i></div>
+
+    <!-- Replace the entire header and hero section with this code -->
+
+    <!-- Header -->
+    <header class="glass-header">
+      <nav class="navbar">
+        <div class="logo-container">
+          <div class="logo-glow"></div>
+          <div class="logo-wrapper">
+            <h1 class="logo">D<span>X</span></h1>
+            <div class="logo-text">
+              <span class="name">Dipendra Xettri</span>
+              <span class="title">Digital Architect</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-menu">
+          <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+
+          <ul class="nav-links" id="navLinks">
+            <li>
+              <a href="#home" class="nav-link"
+                ><span class="link-glow"></span>Home</a
+              >
+            </li>
+            <li>
+              <a href="#skills" class="nav-link"
+                ><span class="link-glow"></span>Skills</a
+              >
+            </li>
+            <li>
+              <a href="#experience" class="nav-link"
+                ><span class="link-glow"></span>Experience</a
+              >
+            </li>
+            <li>
+              <a href="#projects" class="nav-link"
+                ><span class="link-glow"></span>Projects</a
+              >
+            </li>
+            <li>
+              <a href="#testimonials" class="nav-link"
+                ><span class="link-glow"></span>Testimonials</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="nav-link hire-btn"
+                ><span class="link-glow"></span>Hire Me</a
+              >
+            </li>
+            <!-- Add this to your existing navigation in index.html -->
+            <!-- Find the nav-links section and add this as the last item -->
+            <!-- <li class="admin-nav-item">
+              <a href="admin-login.html" class="nav-link admin-link"
+                ><span class="link-glow"></span>Admin Panel
+              </a>
+            </li> -->
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge animate__animated animate__pulse">
+            <span>PREMIUM SERVICES</span>
+            <div class="badge-glow"></div>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="gradient-text">DIPENDRA</span>
+            <span class="gradient-text secondary">XETTRI</span>
+            <span class="title-line">Digital Solutions Architect</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Creating <span class="typewriter" id="typewriter"></span>
+            <span class="cursor">|</span>
+          </p>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-number" data-count="400000">18</div>
+              <div class="stat-label">Websites Built</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number" data-count="98">98%</div>
+              <div class="stat-label">Satisfaction %</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number" data-count="10">07</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+          </div>
+
+          <div class="hero-cta">
+            <a href="#contact" class="cta-btn primary-btn">
+              <span>Start Project</span>
+              <i class="fas fa-arrow-right"></i>
+              <div class="btn-glow"></div>
+            </a>
+            <a href="#skills" class="cta-btn secondary-btn">
+              <span>Explore Skills</span>
+              <i class="fas fa-chevron-down"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="visual-container">
+            <div class="cube-3d">
+              <div class="cube-face front">
+                <div class="face-content">
+                  <i class="fas fa-code"></i>
+                  <span>Web Dev</span>
+                </div>
+              </div>
+              <div class="cube-face back">
+                <div class="face-content">
+                  <i class="fas fa-shield-alt"></i>
+                  <span>Security</span>
+                </div>
+              </div>
+              <div class="cube-face right">
+                <div class="face-content">
+                  <i class="fas fa-video"></i>
+                  <span>VFX</span>
+                </div>
+              </div>
+              <div class="cube-face left">
+                <div class="face-content">
+                  <i class="fas fa-brain"></i>
+                  <span>AI</span>
+                </div>
+              </div>
+              <div class="cube-face top">
+                <div class="face-content">
+                  <i class="fas fa-paint-brush"></i>
+                  <span>Design</span>
+                </div>
+              </div>
+              <div class="cube-face bottom">
+                <div class="face-content">
+                  <i class="fas fa-server"></i>
+                  <span>Infra</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="title-number">01</span>
+            <span class="title-text">Expertise Matrix</span>
+            <div class="title-line"></div>
+          </h2>
+          <p class="section-subtitle">
+            Mastery across multiple digital domains with premium solutions
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill 1 -->
+          <div class="skill-card">
+            <div class="skill-card-inner">
+              <div class="skill-card-front">
+                <div class="skill-icon">
+                  <div class="icon-circle"></div>
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="skill-title">Cyber Security</h3>
+                <p class="skill-desc">
+                  Advanced threat protection & secure infrastructure
+                </p>
+                <div class="skill-level">
+                  <div class="level-bar">
+                    <div class="level-fill" style="width: 95%"></div>
+                  </div>
+                  <span class="level-text">95%</span>
+                </div>
+                <div class="flip-indicator">
+                  <i class="fas fa-sync-alt"></i> Click to flip
+                </div>
+              </div>
+              <div class="skill-card-back">
+                <h4>Cyber Security Tools</h4>
+                <ul class="skill-list">
+                  <li>Penetration Testing</li>
+                  <li>Vulnerability Assessment</li>
+                  <li>Network Security</li>
+                  <li>Incident Response</li>
+                  <li>Security Auditing</li>
+                </ul>
+                <div class="skill-tools">
+                  <span class="tool">Kali Linux</span>
+                  <span class="tool">Metasploit</span>
+                  <span class="tool">Wireshark</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-glow"></div>
+          </div>
+
+          <!-- Skill 2 -->
+          <div class="skill-card">
+            <div class="skill-card-inner">
+              <div class="skill-card-front">
+                <div class="skill-icon">
+                  <div class="icon-circle"></div>
+                  <i class="fas fa-code"></i>
+                </div>
+                <h3 class="skill-title">Web Development</h3>
+                <p class="skill-desc">
+                  Full-stack development with modern frameworks
+                </p>
+                <div class="skill-level">
+                  <div class="level-bar">
+                    <div class="level-fill" style="width: 98%"></div>
+                  </div>
+                  <span class="level-text">98%</span>
+                </div>
+                <div class="flip-indicator">
+                  <i class="fas fa-sync-alt"></i> Click to flip
+                </div>
+              </div>
+              <div class="skill-card-back">
+                <h4>Web Technologies</h4>
+                <ul class="skill-list">
+                  <li>React & Vue.js</li>
+                  <li>Node.js & Express</li>
+                  <li>MongoDB & PostgreSQL</li>
+                  <li>GraphQL & REST APIs</li>
+                  <li>WebGL & Three.js</li>
+                </ul>
+                <div class="skill-tools">
+                  <span class="tool">Next.js</span>
+                  <span class="tool">TypeScript</span>
+                  <span class="tool">Webpack</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-glow"></div>
+          </div>
+
+          <!-- Skill 3 -->
+          <div class="skill-card">
+            <div class="skill-card-inner">
+              <div class="skill-card-front">
+                <div class="skill-icon">
+                  <div class="icon-circle"></div>
+                  <i class="fas fa-user-secret"></i>
+                </div>
+                <h3 class="skill-title">Ethical Hacking</h3>
+                <p class="skill-desc">
+                  Authorized security testing & vulnerability analysis
+                </p>
+                <div class="skill-level">
+                  <div class="level-bar">
+                    <div class="level-fill" style="width: 92%"></div>
+                  </div>
+                  <span class="level-text">92%</span>
+                </div>
+                <div class="flip-indicator">
+                  <i class="fas fa-sync-alt"></i> Click to flip
+                </div>
+              </div>
+              <div class="skill-card-back">
+                <h4>Hacking Expertise</h4>
+                <ul class="skill-list">
+                  <li>Penetration Testing</li>
+                  <li>Social Engineering</li>
+                  <li>Web App Security</li>
+                  <li>Wireless Security</li>
+                  <li>Forensic Analysis</li>
+                </ul>
+                <div class="skill-tools">
+                  <span class="tool">Burp Suite</span>
+                  <span class="tool">Nmap</span>
+                  <span class="tool">SQLMap</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-glow"></div>
+          </div>
+
+          <!-- Skill 4 -->
+          <div class="skill-card">
+            <div class="skill-card-inner">
+              <div class="skill-card-front">
+                <div class="skill-icon">
+                  <div class="icon-circle"></div>
+                  <i class="fas fa-photo-video"></i>
+                </div>
+                <h3 class="skill-title">Video & Photo Editing</h3>
+                <p class="skill-desc">
+                  Professional multimedia production & editing
+                </p>
+                <div class="skill-level">
+                  <div class="level-bar">
+                    <div class="level-fill" style="width: 90%"></div>
+                  </div>
+                  <span class="level-text">90%</span>
+                </div>
+                <div class="flip-indicator">
+                  <i class="fas fa-sync-alt"></i> Click to flip
+                </div>
+              </div>
+              <div class="skill-card-back">
+                <h4>Editing Suite</h4>
+                <ul class="skill-list">
+                  <li>Premiere Pro</li>
+                  <li>After Effects</li>
+                  <li>Photoshop</li>
+                  <li>DaVinci Resolve</li>
+                  <li>Final Cut Pro</li>
+                </ul>
+                <div class="skill-tools">
+                  <span class="tool">Blender</span>
+                  <span class="tool">Cinema 4D</span>
+                  <span class="tool">Audition</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-glow"></div>
+          </div>
+
+          <!-- Skill 5 -->
+          <div class="skill-card">
+            <div class="skill-card-inner">
+              <div class="skill-card-front">
+                <div class="skill-icon">
+                  <div class="icon-circle"></div>
+                  <i class="fas fa-film"></i>
+                </div>
+                <h3 class="skill-title">VFX & Motion Graphics</h3>
+                <p class="skill-desc">
+                  Visual effects & 3D animation for media
+                </p>
+                <div class="skill-level">
+                  <div class="level-bar">
+                    <div class="level-fill" style="width: 88%"></div>
+                  </div>
+                  <span class="level-text">88%</span>
+                </div>
+                <div class="flip-indicator">
+                  <i class="fas fa-sync-alt"></i> Click to flip
+                </div>
+              </div>
+              <div class="skill-card-back">
+                <h4>VFX Technologies</h4>
+                <ul class="skill-list">
+                  <li>3D Modeling</li>
+                  <li>Particle Effects</li>
+                  <li>Motion Tracking</li>
+                  <li>Compositing</li>
+                  <li>Color Grading</li>
+                </ul>
+                <div class="skill-tools">
+                  <span class="tool">Maya</span>
+                  <span class="tool">Houdini</span>
+                  <span class="tool">Nuke</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-glow"></div>
+          </div>
+
+          <!-- Skill 6 -->
+          <div class="skill-card">
+            <div class="skill-card-inner">
+              <div class="skill-card-front">
+                <div class="skill-icon">
+                  <div class="icon-circle"></div>
+                  <i class="fas fa-robot"></i>
+                </div>
+                <h3 class="skill-title">AI & Machine Learning</h3>
+                <p class="skill-desc">
+                  Intelligent systems & automation solutions
+                </p>
+                <div class="skill-level">
+                  <div class="level-bar">
+                    <div class="level-fill" style="width: 85%"></div>
+                  </div>
+                  <span class="level-text">85%</span>
+                </div>
+                <div class="flip-indicator">
+                  <i class="fas fa-sync-alt"></i> Click to flip
+                </div>
+              </div>
+              <div class="skill-card-back">
+                <h4>AI Technologies</h4>
+                <ul class="skill-list">
+                  <li>Neural Networks</li>
+                  <li>Computer Vision</li>
+                  <li>Natural Language Processing</li>
+                  <li>Predictive Analytics</li>
+                  <li>Automation Systems</li>
+                </ul>
+                <div class="skill-tools">
+                  <span class="tool">TensorFlow</span>
+                  <span class="tool">PyTorch</span>
+                  <span class="tool">OpenAI</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-glow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="title-number">02</span>
+            <span class="title-text">Experience & Milestones</span>
+            <div class="title-line"></div>
+          </h2>
+          <p class="section-subtitle">
+            A decade of excellence in digital transformation
+          </p>
+        </div>
+
+        <div class="experience-timeline">
+          <div class="timeline-line"></div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-glow"></div>
+              <div class="marker-inner"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-year">2023</div>
+              <h3 class="timeline-title">18+ Websites</h3>
+              <p class="timeline-desc">
+                Successfully delivered premium web solutions for global clients
+              </p>
+              <div class="timeline-stats">
+                <div class="stat-badge">
+                  <i class="fas fa-trophy"></i>
+                  <span>Industry Leader</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-glow"></div>
+              <div class="marker-inner"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-year">2022</div>
+              <h3 class="timeline-title">AI Integration Suite</h3>
+              <p class="timeline-desc">
+                Developed proprietary AI solutions for 07+ enterprises
+              </p>
+              <div class="timeline-stats">
+                <div class="stat-badge">
+                  <i class="fas fa-brain"></i>
+                  <span>AI Pioneer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-glow"></div>
+              <div class="marker-inner"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-year">2021</div>
+              <h3 class="timeline-title">Security Framework</h3>
+              <p class="timeline-desc">
+                Created advanced security protocols adopted by Fortune 2
+                companies
+              </p>
+              <div class="timeline-stats">
+                <div class="stat-badge">
+                  <i class="fas fa-shield-alt"></i>
+                  <span>Security Expert</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-glow"></div>
+              <div class="marker-inner"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-year">2020</div>
+              <h3 class="timeline-title">VFX Studio Launch</h3>
+              <p class="timeline-desc">
+                Established premium visual effects studio for film industry
+              </p>
+              <div class="timeline-stats">
+                <div class="stat-badge">
+                  <i class="fas fa-film"></i>
+                  <span>Creative Director</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="title-number">03</span>
+            <span class="title-text">Premium Projects</span>
+            <div class="title-line"></div>
+          </h2>
+          <p class="section-subtitle">
+            Selected high-value projects showcasing expertise
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <div class="image-overlay"></div>
+              <div class="project-tag">Enterprise</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Global Banking Security</h3>
+              <p class="project-desc">
+                Complete cybersecurity overhaul for international banking system
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Security</span>
+                <span class="tech-tag">AI</span>
+                <span class="tech-tag">Blockchain</span>
+              </div>
+              <div class="project-value">
+                <i class="fas fa-dollar-sign"></i>
+                <span>Value: $50000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <div class="image-overlay"></div>
+              <div class="project-tag">E-commerce</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Luxury Retail Platform</h3>
+              <p class="project-desc">
+                Custom e-commerce solution for luxury brands with AR integration
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">WebGL</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+              </div>
+              <div class="project-value">
+                <i class="fas fa-dollar-sign"></i>
+                <span>Value: $55000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <div class="image-overlay"></div>
+              <div class="project-tag">Entertainment</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Film VFX Production</h3>
+              <p class="project-desc">
+                Complete visual effects for major Hollywood production
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">VFX</span>
+                <span class="tech-tag">3D</span>
+                <span class="tech-tag">Animation</span>
+              </div>
+              <div class="project-value">
+                <i class="fas fa-dollar-sign"></i>
+                <span>Value: $45000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="title-number">04</span>
+            <span class="title-text">Client Testimonials</span>
+            <div class="title-line"></div>
+          </h2>
+          <p class="section-subtitle">
+            What industry leaders say about working with me
+          </p>
+        </div>
+
+        <div class="testimonials-slider">
+          <div class="testimonial-card active">
+            <div class="testimonial-quote">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p class="testimonial-text">
+              "Dipendra transformed our entire digital infrastructure. The
+              security framework alone prevented multiple potential breaches.
+              Worth every penny."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar"></div>
+              <div class="author-info">
+                <h4>Sarah Chen</h4>
+                <p>CTO, Global Finance Corp</p>
+              </div>
+              <div class="author-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p class="testimonial-text">
+              "The e-commerce platform built by Dipendra increased our sales by
+              300%. The attention to detail and performance optimization is
+              unmatched."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar"></div>
+              <div class="author-info">
+                <h4>Marcus Johnson</h4>
+                <p>CEO, Luxury Retail Group</p>
+              </div>
+              <div class="author-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p class="testimonial-text">
+              "Working with Dipendra on our film's VFX was a game-changer. The
+              quality and creativity exceeded all expectations. Truly a master
+              of his craft."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar"></div>
+              <div class="author-info">
+                <h4>Elena Rodriguez</h4>
+                <p>Director, Studio Productions</p>
+              </div>
+              <div class="author-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-controls">
+            <button class="slider-btn prev-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="slider-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <button class="slider-btn next-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="title-number">05</span>
+            <span class="title-text">Start Your Project</span>
+            <div class="title-line"></div>
+          </h2>
+          <p class="section-subtitle">
+            Ready to transform your digital presence? Let's create something
+            extraordinary
+          </p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-crown"></i>
+              </div>
+              <h3 class="info-title">Premium Services</h3>
+              <p class="info-text">
+                Exclusive solutions tailored for high-value clients and
+                enterprises
+              </p>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <h3 class="info-title">24/7 Availability</h3>
+              <p class="info-text">
+                Dedicated support and monitoring for critical projects
+              </p>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-lock"></i>
+              </div>
+              <h3 class="info-title">NDA Protected</h3>
+              <p class="info-text">
+                Complete confidentiality for all client projects and data
+              </p>
+            </div>
+
+            <div class="pricing-note">
+              <i class="fas fa-gem"></i>
+              <p>
+                Starting from <span class="price">$300</span> for premium
+                projects
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-form-container">
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="964b9ea1-5b4a-4686-bfa3-df91c8f4aa26">
+              <h3 class="form-title">Request Proposal</h3>
+
+              <div class="form-group">
+                <input type="text" id="name" placeholder="Full Name" required />
+                <div class="input-glow"></div>
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Email Address"
+                  required
+                />
+                <div class="input-glow"></div>
+              </div>
+
+              <div class="form-group">
+                <input
+                name="name"
+                  type="text"
+                  id="company"
+                  placeholder="Company/Organization"
+                  required
+                />
+                <div class="input-glow"></div>
+              </div>
+
+              <div class="form-group">
+                <select id="service" required>
+                  <option value="">Select Service</option>
+                  <option value="security">Cyber Security</option>
+                  <option value="web">Web Development</option>
+                  <option value="vfx">VFX & Editing</option>
+                  <option value="ai">AI Solutions</option>
+                  <option value="full">Full Package</option>
+                </select>
+                <div class="input-glow"></div>
+              </div>
+
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  placeholder="Project Details & Budget Range"
+                  rows="4"
+                  required
+                ></textarea>
+                <div class="input-glow"></div>
+              </div>
+
+              <div class="form-footer">
+                <button type="submit" class="submit-btn">
+                  <span>Send Request</span>
+                  <i class="fas fa-paper-plane"></i>
+                  <div class="btn-glow"></div>
+                </button>
+                <div class="form-note">
+                  <i class="fas fa-info-circle"></i>
+                  <span>Response within 24 hours</span>
+                </div>
+              </div>
+            </action=>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="footer-logo">DX</div>
+            <h3 class="footer-name">Dipendra Xettri</h3>
+            <p class="footer-tagline">Elite Digital Solutions Architect</p>
+            <div class="footer-social">
+              <a
+                href="https://www.facebook.com/dipendra.xettri.619988"
+                class="social-link"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/dipendra00100/"
+                class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.tiktok.com/@its_me_dipendra100"
+                class="social-link"
+                ><i class="fab fa-tiktok"></i
+              ></a>
+              <a href="x" class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <div class="link-group">
+              <h4 class="link-title">Services</h4>
+              <a href="#skills" class="footer-link">Cyber Security</a>
+              <a href="#skills" class="footer-link">Web Development</a>
+              <a href="#skills" class="footer-link">VFX & Editing</a>
+              <a href="#skills" class="footer-link">AI Solutions</a>
+            </div>
+
+            <div class="link-group">
+              <h4 class="link-title">Contact</h4>
+              <a href="mailto:dipendrax00100@gmail.com" class="footer-link"
+                >dipendrax00100@gmail.com</a
+              >
+              <a href="tel:+11234567890" class="footer-link">+977 9708418659</a>
+              <a href="#" class="footer-link">Global Availability</a>
+            </div>
+          </div>
+
+          <div class="footer-cta">
+            <h4 class="cta-title">Ready for Excellence?</h4>
+            <a href="#contact" class="footer-btn">
+              <span>Hire Me Now</span>
+              <i class="fas fa-arrow-up"></i>
+            </a>
+            <p class="cta-note">Limited availability for premium clients</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; 2023 Dipendra Xettri. All Rights Reserved. Premium Digital
+            Solutions.
+          </p>
+          <div class="footer-badges">
+            <span class="badge"><i class="fas fa-shield-alt"></i> Secure</span>
+            <span class="badge"><i class="fas fa-award"></i> Premium</span>
+            <span class="badge"><i class="fas fa-globe"></i> Global</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
